@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import MovieBox from "./MovieBox";
-import Header from "./header";
 
 const moviesUrl = "https://api.themoviedb.org/3/movie/popular?api_key=8d97210e6edd66eb9e967278325836d0"
 

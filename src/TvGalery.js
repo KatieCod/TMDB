@@ -12,6 +12,7 @@ function TvGalery(props) {
       .then((res) => res.json())
       .then(data => {
         setTv(data.results)
+        console.log(data)
       })
   }, [])
 
