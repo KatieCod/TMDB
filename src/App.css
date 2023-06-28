@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.theImage {
+  background-image: url("ban1.png");
+  height: 400px;
+}
+
+.theInput {
+  width: 400px;
+  border-radius: 10px;
+}
