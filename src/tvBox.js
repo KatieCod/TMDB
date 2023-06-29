@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CloseButton, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 
 const imageURL = "https://image.tmdb.org/t/p/w500/"
