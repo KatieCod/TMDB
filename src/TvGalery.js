@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import TvBox from "./tvBox";
 
 function TvGalery(props) {
