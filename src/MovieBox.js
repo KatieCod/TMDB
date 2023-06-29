@@ -3,7 +3,7 @@ import { Modal } from "react-bootstrap";
 
 const imageURL = "https://image.tmdb.org/t/p/w500/"
 
-function MovieBox({ original_title, poster_path, vote_average, release_date, overview }) {
+function MovieBox({ original_title, poster_path, vote_average, release_date, overview}) {
 
     const [show, setShow] = useState(false);
 

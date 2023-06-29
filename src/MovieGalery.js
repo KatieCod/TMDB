@@ -12,14 +12,14 @@ function MovieGalery(props) {
             .then((res) => res.json())
             .then(data => {
                 setMovies(data.results)
+                console.log(data)
             })
     }, [])
 
     return (
         <div className='d-flex p-3 text-center' style={{ overflowX: "auto" }}>
             <div className='d-flex flex-row' >
-                {movies.filter(movie => movie.original_title.includes(props.query)).map((movie) => <MovieBox key={movie.id} {...movie} />)}
-            </div>
+                {movies.filter(movie => movie.original_title.includes(props.query)).map((movie) => <MovieBox key={movie.id} {...movie} />)}            </div>
         </div>
     )
 }
