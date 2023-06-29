@@ -5,21 +5,10 @@ const moviesUrl = "https://api.themoviedb.org/3/movie/popular?api_key=8d97210e6e
 
 function MovieGalery(props) {
 
-    const [movies, setMovies] = useState([]);
-
-    useEffect(() => {
-        fetch(moviesUrl)
-            .then((res) => res.json())
-            .then(data => {
-                setMovies(data.results)
-                console.log(data)
-            })
-    }, [])
-
     return (
         <div className='d-flex p-3 text-center' style={{ overflowX: "auto" }}>
             <div className='d-flex flex-row' >
-                {movies.filter(movie => movie.original_title.includes(props.query)).map((movie) => <MovieBox key={movie.id} {...movie} />)}            </div>
+                {props.movies.filter(movie => movie.original_title.includes(props.query)).map((movie) => <MovieBox key={movie.id} {...movie} />)}            </div>
         </div>
     )
 }
