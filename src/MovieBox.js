@@ -14,7 +14,7 @@ function MovieBox({ original_title, poster_path, vote_average, release_date, ove
 
     return (
         <div className="card" onClick={handleShow} style={{ width: "16rem" }}>
-            <img classname="card-img-top" src={imageURL + poster_path} alt="Card image cap" />
+            <img className="card-img-top" src={imageURL + poster_path} alt="Card image cap" />
             <div className="card-body">
                 <h5 className="card-text">{original_title}</h5>
                 <Modal show={show} onHide={handleClose}>
@@ -24,7 +24,7 @@ function MovieBox({ original_title, poster_path, vote_average, release_date, ove
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <img classname="card-img-top " src={imageURL + poster_path} style={{ width: "29rem" }} />
+                        <img className="card-img-top " src={imageURL + poster_path} style={{ width: "29rem" }} />
                         <h5 className="card-text"> ImDb: {vote_average}</h5>
                         <h5 className="card-text"> Release date: {release_date}</h5>
                         <h5 className="card-text"> Overview:</h5>
